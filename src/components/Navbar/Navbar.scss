@@ -111,7 +111,7 @@
 }
 
 .Navbar__sign_up button,
-.Navbar__menu_container button {
+.Navbar__menu_container a button {
     padding: 1rem 1.5rem;
     color: #f00050;
     font-family: "AstroSpace1";
@@ -123,9 +123,12 @@
     border: 1px solid #f00050;    
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.Navbar__sign_up button:hover {
+
+
+.Navbar__sign_up a button:hover {
     background: var(--gradient-bar);
     color: #00249e;
     box-shadow:
