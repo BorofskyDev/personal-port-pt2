@@ -68,12 +68,14 @@
     font-family: 'Andromeda';
     color: #fc1577;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.3rem;
     line-height: 25px;
     text-decoration: none;
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
+    letter-spacing: 5px;
+    padding-left: 37px;
 }
 
 
@@ -110,12 +112,12 @@
 
 .Navbar__sign_up button,
 .Navbar__menu_container button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     color: #f00050;
     font-family: "AstroSpace1";
     font-weight: 500;
     line-height: 25px;
-    font-size: 18px;
+    font-size: 2rem;
     background: transparent;
     border-radius: 5px;
     border: 1px solid #f00050;    

@@ -1,4 +1,5 @@
 import './App.scss';
+import './index.scss'
 import styled from 'styled-components';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
