@@ -3,13 +3,13 @@ import './index.scss'
 import styled from 'styled-components';
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
-// import { Earth } from './components/Contact/Earth'
+import { Earth } from './components/Contact/Earth'
 import Navbar from './components/Navbar/Navbar'
 import Main from './components/Main/Main'
 import Technologies from './components/Technologies/Technologies'
 import Projects from './components/Projects/Projects'
 import History from './components/History/History'
-import Contact from './components/Contact/Contact'
+import { TopSection } from './components/Contact/Contact'
 
 
 
@@ -25,11 +25,11 @@ function App() {
       <Main />
       <Technologies />
       <Projects />
-      <History />
-      <Contact />
+      {/* <History /> */}
+      <TopSection />
       <Canvas>
         <Suspense fallback={null}>
-          {/* <Earth /> */}
+          <Earth />
         </Suspense>
       </Canvas>
     </CanvasContainer>
