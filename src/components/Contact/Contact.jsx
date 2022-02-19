@@ -16,6 +16,7 @@ const TopSectionContainer = styled.div`
     padding-top: 20%;
     z-index: 99;
     margin-inline: 10px;
+
 `;
 
 const Logo = styled.h1`
@@ -23,6 +24,10 @@ const Logo = styled.h1`
     color: #ffffff;
     font-weight: 800;
     font-size: 80px;
+
+    @media (max-width: 650px) {
+        font-size: 3rem;
+    }
 `;
 
 const Slogan = styled.h4`
@@ -31,6 +36,10 @@ const Slogan = styled.h4`
     font-weight: 700;
     font-size: 30px;
     margin-top: 1em;
+
+    @media (max-width: 650px) {
+        font-size: 1.8rem;
+    }
 `;
 
 const Paragraph = styled.p`
@@ -77,7 +86,7 @@ export function TopSection() {
   return <TopSectionContainer>
     <Logo className='Contact__header'>Joel Borofsky</Logo>
     <Slogan className='Contact__slogan'>Let's Move Forward Together</Slogan>
-    <Paragraph className='Contact__content'>Everything you see here and every animation in this section has been coded by me via React-Three-Fiber.
+    <Paragraph className='Contact__content'>Every object and animation in this section has been coded by me via React-Three-Fiber.
     </Paragraph>
     <Paragraph className='Contact__slogan-bottom'>Imagine what I can do for you</Paragraph>
     <a href="mailto: joelborofskydev@gmail.com"><ContactButton className='Contact__button' id='contact'>Hire Me</ContactButton></a>

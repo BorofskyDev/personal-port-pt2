@@ -14,8 +14,11 @@ const Menu = () => (
     <p>
       <a href="#projects">Projects</a>
     </p>
-    <p>
+    {/* <p>
       <a href="#history">History</a>
+    </p> */}
+    <p>
+      <a href="#contact">Contact</a>
     </p>
   </>
 );
@@ -36,9 +39,9 @@ function Navbar() {
           <Menu />
         </div>
       </div>
-      <div className="Navbar__sign_up">
+      {/* <div className="Navbar__sign_up">
         <button type="button">Hire Me</button>
-      </div>
+      </div> */}
       <div className="Navbar__menu">
         {toggleMenu ? (
           <RiCloseLine color="#fff" onClick={() => setToggleMenu(false)} />
@@ -49,9 +52,9 @@ function Navbar() {
           <div className="Navbar__menu_container scale-up-center">
             <div className="Navbar__menu_container-links">
               <Menu />
-              <div className="Navbar__menu_container-links-sign">
+              {/* <div className="Navbar__menu_container-links-sign">
                 <button type="button">Hire Me</button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}

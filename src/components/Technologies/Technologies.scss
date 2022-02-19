@@ -387,6 +387,7 @@ ul#descriptions h2:hover + p {
 
   .SpinnerBox {
     display: flex;
+    margin-top: 90px;
   }
 
   ul#descriptions {
@@ -396,6 +397,7 @@ ul#descriptions h2:hover + p {
     margin-inline: 10px;
     justify-content: center;
     align-items: space-around;
+    margin-top: 5px;
   }
 
   ul#descriptions h2 {
@@ -588,10 +590,58 @@ ul#descriptions h2:hover + p {
   ul#descriptions li p {
     top: 30%;
     width: 200px;
+    font-size: .8rem;
   }
 
   ul#descriptions h2:hover + p {
     left: 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sun { 
+      width: 40px;
+      height: 40px;
+  }
+
+  .planet {
+      width: 12px;
+      height: 12px;
+      top: -7px;
+  }
+
+  .mercury-orbit {
+      width: 70px;
+      height: 70px;
+  }
+
+  .venus-orbit {
+      width: 100px;
+      height: 100px;
+  }
+
+  .earth-orbit {
+      width: 130px;
+      height: 130px;
+  }
+
+  .mars-orbit {
+      width: 160px;
+      height: 160px;
+  }
+
+  .jupiter-orbit {
+      width: 190px;
+      height: 190px;
+  }
+
+  .saturn-orbit {
+      width: 220px;
+      height: 220px;
+  }
+
+  ul#descriptions li p {
+    font-size: .6rem;
   }
 }
 

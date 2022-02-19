@@ -11,9 +11,9 @@ import EarthSpecularMap from "../../images/8k_earth_specular_map.jpg";
 import { useRef } from "react";
 
 export function Earth(props) {
-  const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(
+  const [colorMap, normalMap, specularMap, cloudsMap, nightMap] = useLoader(
     TextureLoader,
-    [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]
+    [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap, EarthNightMap]
   );
 
   const earthRef = useRef();
