@@ -1,5 +1,6 @@
 .Main {
     display: flex;
+    position: relative;
 }
 
 .Main__container {
@@ -73,6 +74,7 @@
     color: #ffffff;
     font-weight: 200;
     text-align: center;
+   
 }
 .Main__container-header__content_bottom {
     font-family: "AstroSpace1";
@@ -205,13 +207,82 @@
         0 0 14px 9px #eb3402;
 }
 
+.snowBody {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 5vw;
+//   height: 100vh;
+//   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+//   overflow: hidden;
+//   filter: drop-shadow(0 0 10px white);
+}
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+.snow {
+  $total: 200;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+
+
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.000091vw;
+    $random-offset: random_range(-100000, 100000) * 0.0001vw;
+    $random-x-end: $random-x + $random-offset;
+    $random-x-end-yoyo: $random-x + ($random-offset / 2);
+    $random-yoyo-time: random_range(30000, 80000) / 100000;
+    $random-yoyo-y: $random-yoyo-time * 100vh;
+    $random-scale: random(10000) * 0.0001;
+    $fall-duration: random_range(10, 30) * 1s;
+    $fall-delay: random(30) * -1s;
+
+    &:nth-child(#{$i}) {
+      opacity: random(10000) * 0.0001;
+      transform: translate($random-x, -10px) scale($random-scale);
+      animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+    }
+
+    @keyframes fall-#{$i} {
+      #{percentage($random-yoyo-time)} {
+        transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+      }
+
+      to {
+        transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 1250px) {
     .Main {
         flex-direction: column;
     }
 
+    .snowBody {
+        height: 20%;
+    }
+
     .Main__container {
         margin: 0 0 3rem;
+    }
+    .snow {
+        position: relative;
+    }
+
+    .snow {
+        height: 4px;
+        width: 4px;
     }
 }
 
@@ -243,6 +314,11 @@
         font-size: 16px;
         line-height: 24px;
     }
+
+    .snow {
+        height: 4px;
+        width: 4px;
+    }
 }
 
 @media screen and (max-width: 490px) {
@@ -260,5 +336,10 @@
     .SellSafe__header-content__input button {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .snow {
+        height: 2px;
+        width: 2px;
     }
 }
