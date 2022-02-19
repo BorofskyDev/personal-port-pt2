@@ -1,0 +1,180 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.Navbar__links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Navbar__links-logo {
+    font-family: "AstroSpace1";
+    margin-right: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Navbar__links-logo img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    border-image: var(--gradient-bar);
+    border-image-slice: 1;
+}
+
+.Navbar__links-logo2 {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid;
+    border-image: var(--gradient-bar);
+    border-image-slice: 1;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    background: linear-gradient(103.22deg, #3700fd -13.86%, #f00050 79.55%);
+    background-clip: text;
+    -webkit-bakground-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.Navbar__links_logo-icon {
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin-right: 3px;
+    color: #6800a5;
+}
+
+.Navbar__links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Navbar__sign-up {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Navbar__links-container p a,
+.Navbar__sign_up p a,
+.Navbar__menu_container p a {
+    font-family: 'Andromeda';
+    color: #fc1577;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+
+.Navbar__links-container p:hover {
+    background: var(--static-text);
+    background-clip: text;
+    -webkit-bakground-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.Navbar__menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.Navbar__menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    
+}
+
+.Navbar__sign_up button,
+.Navbar__menu_container button {
+    padding: 0.5rem 1rem;
+    color: #f00050;
+    font-family: "AstroSpace1";
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #f00050;    
+    outline: none;
+    cursor: pointer;
+}
+
+.Navbar__sign_up button:hover {
+    background: var(--gradient-bar);
+    color: #00249e;
+    box-shadow:
+        0 0 20px 6px #f00050,
+        0 0 30px 12px #3700fd,
+        0 0 35px 15px #eb3402;
+}
+
+.Navbar__menu_container button:hover {
+    background: var(--gradient-bar);
+    color: #00249e;
+    box-shadow:
+         0 0 20px 6px #f00050,
+        0 0 30px 12px #3700fd,
+        0 0 35px 15px #eb3402;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .Navbar__links-container {
+        display: none;
+    }
+    
+    .Navbar__menu {
+        display: flex;
+    }
+    .Navbar__sign_up button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Navbar {
+        padding: 2rem;
+    }
+    
+    
+    
+    .Navbar__menu_container {
+        top: 20px;
+    }
+    
+   
+    .Navbar__menu_container-links-sign {
+        display: block;
+    }
+}
