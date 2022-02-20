@@ -1,225 +1,198 @@
 .Main {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .Main__container {
-    flex: 1;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-inline: 5rem;
+  flex: 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: 5rem;
 }
 
 .Main__container-header {
-    font-family: 'PROMETHEUS';
-    font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
-    text-transform: uppercase;
-    text-align: center;
-    background: linear-gradient(
-    89.97deg,
-        #f00050,
-        #3700fd,
-        #eb3402,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 6s infinite linear alternate-reverse;
-    
+  font-family: "PROMETHEUS";
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(89.97deg, #f00050, #3700fd, #eb3402);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 6s infinite linear alternate-reverse;
 }
-
 
 .Main__container-header2 {
-    font-family: 'AstroSpace1';
-    font-size: 2.5rem;
-    line-height: 2.4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    background: linear-gradient(
-    45deg,
-        #f00050,
-        #3700fd,
-        #eb3402,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 4s infinite linear alternate;
+  font-family: "AstroSpace1";
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(45deg, #f00050, #3700fd, #eb3402);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 4s infinite linear alternate;
 }
 @keyframes animatedText {
-    from {
-        background-position: 0%;
-    }
+  from {
+    background-position: 0%;
+  }
 
-    to {
-        background-position: 100%
-    }
+  to {
+    background-position: 100%;
+  }
 }
 
 .Main__container-header__content {
-    font-family: "AstroSpace1";
-    font-size: 20px;
-    letter-spacing: 4px;
-    line-height: 27px;
-    margin-top: 1.5rem;
-    color: #ffffff;
-    font-weight: 200;
-    text-align: center;
-   
+  font-family: "AstroSpace1";
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 27px;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-weight: 200;
+  text-align: center;
 }
 .Main__container-header__content_bottom {
-    font-family: "AstroSpace1";
-    font-size: 1.3rem;
-    letter-spacing: 4px;
-    line-height: 27px;
-    margin-top: 1.5rem;
-    color: #ffffff;
-    font-weight: 200;
-    text-align: center;
+  font-family: "AstroSpace1";
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  line-height: 27px;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-weight: 200;
+  text-align: center;
 }
 
 .Main__container-header2_bottom {
-    font-family: 'AstroSpace1';
-    font-size: 2.5rem;
-    line-height: 2.4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    background: linear-gradient(
-    45deg,
-        #f5b0c2,
-        #fc1577,
-        #eb3402,
-        #00249e,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 8s infinite linear alternate;
+  font-family: "AstroSpace1";
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(45deg, #f5b0c2, #fc1577, #eb3402, #00249e);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 8s infinite linear alternate;
 }
 
-
 .Main__container-button-box {
-    height: 3.5rem;
-    margin: 2rem 0 1rem;
-    display: flex;
-    z-index: 10;
-    position: relative;
+  height: 3.5rem;
+  margin: 2rem 0 1rem;
+  display: flex;
+  z-index: 10;
+  position: relative;
 }
 
 .Main__container-btn button {
-    padding: 1rem 1.5rem;
-    color: #f00050;
-    font-family: "AstroSpace1";
-    font-weight: 500;
-    line-height: 25px;
-    font-size: 2rem;
-    background: transparent;
-    border-radius: 5px;
-    border: 1px solid #f00050;    
-    outline: none;
-    cursor: pointer;
-    z-index: 10;
-    
+  padding: 1rem 1.5rem;
+  color: #f00050;
+  font-family: "AstroSpace1";
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 2rem;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #f00050;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .Main__container-btn button:hover {
-    background: var(--gradient-bar);
-    color: #00249e;
-    box-shadow:
-        0 0 20px 6px #f00050,
-        0 0 30px 12px #3700fd,
-        0 0 35px 15px #eb3402;
-    z-index: 10;
+  background: var(--gradient-bar);
+  color: #00249e;
+  box-shadow: 0 0 20px 6px #f00050, 0 0 30px 12px #3700fd, 0 0 35px 15px #eb3402;
+  z-index: 10;
 }
 
 .Main__container-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 6%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6%;
 }
 
 @keyframes animate {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    50% {
-        background-position: 300% 0;
-    }
+  50% {
+    background-position: 300% 0;
+  }
 
-    100% {
-        background-position: 0 0;
-    }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .Main__container-image img {
-    border-radius: 50%;
-    width: 100%;
-    height: 90%;
+  border-radius: 50%;
+  width: 100%;
+  height: 90%;
 }
 
 .Header-content__social {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .Header-content__social_media {
-     background-color: #00249e;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px -5px #fc1577;
-    cursor: pointer;
-    font-family: roboto;
-    height: 55px;
-    font-size: 1.4rem;
-    overflow: hidden;
-    padding: 1px;
-    position: relative;
-    transition: text-shadow 0.5s ease;
-    width: 55px;
-    margin-inline: 2rem;
+  background-color: #00249e;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px -5px #fc1577;
+  cursor: pointer;
+  font-family: roboto;
+  height: 55px;
+  font-size: 1.4rem;
+  overflow: hidden;
+  padding: 1px;
+  position: relative;
+  transition: text-shadow 0.5s ease;
+  width: 55px;
+  margin-inline: 2rem;
 }
 
 .Header-content__social_icon {
-    color: #fc1577;
-    transition: color 0.5s ease-out;
+  color: #fc1577;
+  transition: color 0.5s ease-out;
 }
 
 .Header-content__social_media:hover {
-    color: #3700fd;
-    transform: scale(1.2, 1.2);
-    box-shadow:
-        0 0 6px 3px #f00050,
-        0 0 10px 6px #f00050,
-        0 0 14px 9px #eb3402;
+  color: #3700fd;
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 0 6px 3px #f00050, 0 0 10px 6px #f00050, 0 0 14px 9px #eb3402;
 }
 
 .snowBody {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    position: relative;
-    height: 100%;
-    width: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  position: relative;
+  height: 100%;
+  width: 5px;
 }
 
 @function random_range($min, $max) {
@@ -235,8 +208,6 @@
   height: 10px;
   background: #ffffff;
   border-radius: 50%;
-
-
 
   @for $i from 1 through $total {
     $random-x: random(1000000) * 0.000091vw;
@@ -267,92 +238,89 @@
   }
 }
 
-
 @media screen and (max-width: 1250px) {
-    .Main {
-        flex-direction: column;
-    }
+  .Main {
+    flex-direction: column;
+  }
 
-    .snowBody {
-        height: 20%;
-    }
+  .snowBody {
+    height: 20%;
+  }
 
-    .Main__container {
-        margin: 0 0 3rem;
-    }
-    .snow {
-        position: absolute;
-    }
+  .Main__container {
+    margin: 0 0 3rem;
+  }
+  .snow {
+    position: absolute;
+  }
 
-    .snow {
-        height: 4px;
-        width: 4px;
-    }
+  .snow {
+    height: 4px;
+    width: 4px;
+  }
 
-    .Main__container-image img {
-        height: 70%;
-        width: 60%;
-    }
+  .Main__container-image img {
+    height: 70%;
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .Main__container-header {
-        font-size: 48px;
-        line-height: 60px;
-        width: 80%;
-    }
+  .Main__container-header {
+    font-size: 48px;
+    line-height: 60px;
+    width: 80%;
+  }
 
-    .Main__container-header2 {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  .Main__container-header2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    .Main__container-header__content {
-        font-size: 14px;
-        width: 80%;
-    }
+  .Main__container-header__content {
+    font-size: 14px;
+    width: 80%;
+  }
 
-    /* .SellSafe__header-content__people {
+  /* .SellSafe__header-content__people {
         flex-direction: column;
     } */
 
-    .SellSafe__header-content__people p {
-        margin: 0;
-    }
+  .SellSafe__header-content__people p {
+    margin: 0;
+  }
 
-    .SellSafe__header-content__input input,
-    .SellSafe__header-content__input button {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  .SellSafe__header-content__input input,
+  .SellSafe__header-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    .snow {
-        height: 4px;
-        width: 4px;
-    }
+  .snow {
+    height: 4px;
+    width: 4px;
+  }
 }
 
 @media screen and (max-width: 490px) {
-    .SellSafe__header h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
+  .SellSafe__header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
 
-    .SellSafe__header-content p {
-        font-size: 14px;
-        line-height: 24px;
-    }
+  .SellSafe__header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-    .SellSafe__header-content__input input,
-    .SellSafe__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
-    }
+  .SellSafe__header-content__input input,
+  .SellSafe__header-content__input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
-    .snow {
-        height: 2px;
-        width: 2px;
-    }
-
-   
+  .snow {
+    height: 2px;
+    width: 2px;
+  }
 }

@@ -10,6 +10,9 @@ import EarthNormalMap from "../../images/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../../images/8k_earth_specular_map.jpg";
 import { useRef } from "react";
 
+// Possible need to use 'useTexture' from Drie as a way to get around this not showing up on iPhones.
+// https://github.com/pmndrs/drei#usetexture
+
 export function Earth(props) {
   const [colorMap, normalMap, specularMap, cloudsMap, nightMap] = useLoader(
     TextureLoader,

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
-margin-inline: 75px;
+  margin-inline: 75px;
   padding: 2rem;
   background: var(--color-footer);
 
@@ -163,19 +163,19 @@ margin-inline: 75px;
 }
 
 .Projects__setting-text_box {
-    flex: 2;
-    max-width: 390px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    margin-left: -400px;
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: -400px;
 }
 
 .Projects__setting-text_box-header {
-    font-family: "AstroSpace1";
-    cursor: pointer;
+  font-family: "AstroSpace1";
+  cursor: pointer;
   font-size: 1.5rem;
   line-height: 2.4rem;
   width: 100%;
@@ -192,11 +192,11 @@ margin-inline: 75px;
 }
 
 .Projects__setting-text_box-content {
-    font-family: "AstroSpace1";
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 24px;
-    color: white;
+  font-family: "AstroSpace1";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  color: white;
 }
 
 @keyframes animate {
@@ -214,59 +214,57 @@ margin-inline: 75px;
 }
 
 @media screen and (max-width: 1250px) {
-    // .Projects {
-    //     margin-inline: 100px;
-    // }
+  // .Projects {
+  //     margin-inline: 100px;
+  // }
 
-    .Projects__setting-feature {
-        margin-right: -60%;
-    }  
+  .Projects__setting-feature {
+    margin-right: -60%;
+  }
 
-    .shadow {
-        width: 250px;
-        height: 125px
-    }
+  .shadow {
+    width: 250px;
+    height: 125px;
+  }
 
-    .Projects__setting-feature_box-button {
-        padding: 1px 5px;
-        font-size: 1em;
-    }
+  .Projects__setting-feature_box-button {
+    padding: 1px 5px;
+    font-size: 1em;
+  }
 
-    .Projects__setting-text_box {
-        flex: 2;
-        margin-top: 100px;
-        margin-left: -150px;
-    }
+  .Projects__setting-text_box {
+    flex: 2;
+    margin-top: 100px;
+    margin-left: -150px;
+  }
 
-    .Projects__setting-text_box-content {
-        font-size: .8rem;
-    }
+  .Projects__setting-text_box-content {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 1084px) {
-    .Projects__setting {
-        justify-content: center;
-        align-items: center;
-    }
+  .Projects__setting {
+    justify-content: center;
+    align-items: center;
+  }
 
-    .Projects__setting-feature {
-        display: none;
-    }
+  .Projects__setting-feature {
+    display: none;
+  }
 
-    .Projects__setting-text_box {
-        align-items: center;
-        justify-content: center;
-        margin-left: 50px;
-    }
-
-    
+  .Projects__setting-text_box {
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .Projects {
-        margin-inline: 1px;
-    }
+  .Projects {
+    margin-inline: 1px;
+  }
 
-    .Projects__header {
-        font-size: 2rem;
-    }
+  .Projects__header {
+    font-size: 2rem;
+  }
 }

@@ -76,8 +76,8 @@ function Technologies() {
         <li>
           <h2 id="sun">Front End</h2>
           <p className="SolarSystem__list-box">
-            HTML | CSS | JavaScript | Figma | React | ThreeJS | React-Three-Fiber | 
-            SASS | Bootstrap | TailwindCSS | NextJS | 
+            HTML | CSS | JavaScript | Figma | React | ThreeJS |
+            React-Three-Fiber | SASS | Bootstrap | TailwindCSS | NextJS |
           </p>
         </li>
 
@@ -92,15 +92,15 @@ function Technologies() {
         <li>
           <h2 id="venus">Third Party</h2>
           <p className="SolarSystem__list-box">
-            GitHub | Firebase/Firestore | Hostinger 
+            GitHub | Firebase/Firestore | Hostinger
           </p>
         </li>
 
         <li>
           <h2 id="earth">Soft Skills</h2>
           <p className="SolarSystem__list-box">
-            Sales | Leadership | Customer Service | Business Development | Account Management | 
-            Coaching | Public Speaker | Writer
+            Sales | Leadership | Customer Service | Business Development |
+            Account Management | Coaching | Public Speaker | Writer
           </p>
         </li>
       </ul>

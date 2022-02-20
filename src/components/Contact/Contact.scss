@@ -1,85 +1,68 @@
 .Contact__header {
-    font-family: 'PROMETHEUS';
-    font-weight: 800;
-    font-size: 62px;
-    // line-height: 75px;
-    text-transform: uppercase;
-    text-align: center;
-    background: linear-gradient(
-    89.97deg,
-        #f00050,
-        #3700fd,
-        #eb3402,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 6s infinite linear alternate-reverse;
+  font-family: "PROMETHEUS";
+  font-weight: 800;
+  font-size: 62px;
+  // line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(89.97deg, #f00050, #3700fd, #eb3402);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 6s infinite linear alternate-reverse;
 }
 
 .Contact__slogan {
-    font-family: 'AstroSpace1';
-    font-size: 2.5rem;
-    line-height: 2.4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    background: linear-gradient(
-    45deg,
-        #f00050,
-        #3700fd,
-        #eb3402,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 4s infinite linear alternate;
+  font-family: "AstroSpace1";
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(45deg, #f00050, #3700fd, #eb3402);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 4s infinite linear alternate;
 }
 
 @keyframes animatedText {
-    from {
-        background-position: 0%;
-    }
+  from {
+    background-position: 0%;
+  }
 
-    to {
-        background-position: 100%
-    }
+  to {
+    background-position: 100%;
+  }
 }
 
 .Contact__content {
-    font-family: "AstroSpace1";
-    font-size: 20px;
-    letter-spacing: 4px;
-    line-height: 27px;
-    margin-top: 1.5rem;
-    color: #ffffff;
-    font-weight: 200;
-    text-align: center;
+  font-family: "AstroSpace1";
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 27px;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-weight: 200;
+  text-align: center;
 }
 
 .Contact__slogan-bottom {
-    font-family: 'AstroSpace1';
-    font-size: 2.5rem;
-    line-height: 2.4rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    background: linear-gradient(
-    45deg,
-        #f5b0c2,
-        #fc1577,
-        #eb3402,
-        #00249e,
-    );
-    background-clip: text;
-    -webkit-bakground-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: animatedText 8s infinite linear alternate;
+  font-family: "AstroSpace1";
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(45deg, #f5b0c2, #fc1577, #eb3402, #00249e);
+  background-clip: text;
+  -webkit-bakground-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 8s infinite linear alternate;
 }
-
