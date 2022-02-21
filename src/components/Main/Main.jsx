@@ -228,34 +228,34 @@ function Main() {
           </a>
         </div>
         <div className="Header-content__social">
-          <button className="Header-content__social_media">
             <a
               href="https://github.com/solovyovsdom"
               rel="noreferrer"
               target="_blank"
             >
-              <FaGithub className="Header-content__social_icon" />
-            </a>
-          </button>
           <button className="Header-content__social_media">
-            {" "}
+              <FaGithub className="Header-content__social_icon" />
+          </button>
+            </a>
             <a
               href="https://twitter.com/solovyovdev"
               rel="noreferrer"
               target="_blank"
             >
-              <FaTwitter className="Header-content__social_icon" />
-            </a>
-          </button>
           <button className="Header-content__social_media">
+            {" "}
+              <FaTwitter className="Header-content__social_icon" />
+          </button>
+            </a>
             <a
               href="https://www.linkedin.com/in/joelborofsky/"
               rel="noreferrer"
               target="_blank"
             >
+          <button className="Header-content__social_media">
               <FaLinkedin className="Header-content__social_icon" />
-            </a>
           </button>
+            </a>
         </div>
       </div>
       <div className="Main__container-image Main__container-image__shadow">
