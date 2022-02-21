@@ -248,7 +248,13 @@ function Main() {
             </a>
           </button>
           <button className="Header-content__social_media">
-            <FaLinkedin className="Header-content__social_icon" />
+            <a
+              href="https://www.linkedin.com/in/joelborofsky/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin className="Header-content__social_icon" />
+            </a>
           </button>
         </div>
       </div>

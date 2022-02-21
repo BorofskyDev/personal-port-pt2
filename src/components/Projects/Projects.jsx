@@ -28,9 +28,11 @@ function Projects() {
         </div>
         <div className="Projects__setting-text">
           <div className="Projects__setting-text_box">
-            <a href="https://wesellsafe.com" rel="noreferrer" target="_blank">
-              <h4 className="Projects__setting-text_box-header">SellSafe</h4>
-            </a>
+            <h4 className="Projects__setting-text_box-header">
+              <a href="https://wesellsafe.com" rel="noreferrer" target="_blank">
+                SellSafe
+              </a>
+            </h4>
             <p className="Projects__setting-text_box-content">
               Developed in React. Designed to play off the automation aspect of
               what the company offers. Start-up business that is wanting to
@@ -40,11 +42,11 @@ function Projects() {
             </p>
           </div>
           <div className="Projects__setting-text_box">
-            <a href="https://corestrat.net" rel="noreferrer" target="_blank">
-              <h4 className="Projects__setting-text_box-header">
+            <h4 className="Projects__setting-text_box-header">
+              <a href="https://corestrat.net" rel="noreferrer" target="_blank">
                 Core Strategies
-              </h4>
-            </a>
+              </a>
+            </h4>
             <p className="Projects__setting-text_box-content">
               Developed in React. Small business that consults with industrial
               credit in business to business markets. Fully designed and built
